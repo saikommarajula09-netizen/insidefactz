@@ -1,0 +1,17 @@
+{
+  "name": "insidefactz-website",
+  "version": "1.0.0",
+  "description": "Premium training institute portal for InsideFactz Academy.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "insidefactz",
+    "datascience",
+    "training"
+  ],
+  "author": "Antigravity UI Team",
+  "license": "ISC"
+}

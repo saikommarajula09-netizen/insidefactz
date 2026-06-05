@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InsideFactz Training Institute - Premium education in Data Science, Machine Learning, and Generative AI. Master industry-aligned programs with hands-on labs and expert mentor guidance.">
+  <title>InsideFactz Training Institute | Elite Tech Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Decorative Ambient Radial Glow Background Elements -->
+  <div class="bg-glow"></div>
+  <div class="bg-glow-left"></div>
+
+  <div class="app-container">
+    
+    <!-- HEADER & NAVIGATION -->
+    <header>
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          InsideFactz <span>Academy</span>
+          <div class="logo-badge">Est. 2017</div>
+        </a>
+        
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#tracks" class="nav-link">Learning Tracks</a></li>
+            <li><a href="#explorer" class="nav-link">Module Explorer</a></li>
+            <li><a href="#outcomes" class="nav-link">Career Outcomes</a></li>
+            <li><a href="#fees" class="nav-link">Fee Structure</a></li>
+            <li><button class="btn btn-primary" onclick="openEnrollModal()">Enroll Now</button></li>
+          </ul>
+        </nav>
+
+        <button class="mobile-menu-btn" onclick="openEnrollModal()" aria-label="Open Enrollment Form">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      
+      <!-- ========================================================
+           1. HOME PAGE VIEW
+           ======================================================== -->
+      <section id="home" class="view-section active">
+        
+        <!-- HERO SECTION -->
+        <div class="hero">
+          <div class="hero-grid">
+            <div class="hero-text">
+              <div class="hero-badge-container">
+                <span class="hero-badge-dot"></span>
+                <span class="hero-badge-text">InsideFactz Training Institute</span>
+              </div>
+              <h1 class="hero-title">Data Science, AI & <span>Machine Learning</span> with Python</h1>
+              <p class="hero-desc">Excellence in Tech Education. Elevate your professional capabilities with an elite, immersive curriculum bridging the gap between rigorous academic theory and cutting-edge industrial practice.</p>
+              <div class="hero-actions">
+                <button class="btn btn-primary" onclick="openEnrollModal()">Enroll Today</button>
+                <a href="#tracks" class="btn btn-secondary nav-link">Explore Curriculum</a>
+              </div>
+            </div>
+            
+            <div class="hero-visual">
+              <div class="hero-card-glow"></div>
+              <!-- Floating program details card -->
+              <div class="hero-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-tag">InsideFactz Excellence</span>
+                  <h3 class="mockup-title">Premium Training Core</h3>
+                </div>
+                
+                <div class="mockup-item">
+                  <div class="mockup-icon">1</div>
+                  <div class="mockup-text">
+                    <h4>Python-Centric Curriculum</h4>
+                    <p>Entirely customized for Python coding labs from day one.</p>
+                  </div>
+                </div>
+
+                <div class="mockup-item">
+                  <div class="mockup-icon">2</div>
+                  <div class="mockup-text">
+                    <h4>Industry Mentor Support</h4>
+                    <p>Learn directly from expert data scientists & ML developers.</p>
+                  </div>
+                </div>
+
+                <div class="mockup-item">
+                  <div class="mockup-icon">3</div>
+                  <div class="mockup-text">
+                    <h4>Real-World Case Studies</h4>
+                    <p>Build enterprise pipelines, databases, and LLM endpoints.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATS SECTION -->
+        <div class="stats-section">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span id="stat-tracks" class="stat-number" data-animated="false">0</span>
+              <p class="stat-label">Learning Tracks</p>
+            </div>
+            <div class="stat-card">
+              <span id="stat-modules" class="stat-number" data-animated="false">0</span>
+              <p class="stat-label">Modules Syllabus</p>
+            </div>
+            <div class="stat-card">
+              <span id="stat-topics" class="stat-number" data-animated="false">0</span>
+              <p class="stat-label">Topics Covered</p>
+            </div>
+            <div class="stat-card">
+              <span id="stat-projects" class="stat-number" data-animated="false">0</span>
+              <p class="stat-label">Hands-On Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <div class="section-container about-section">
+          <div class="about-grid">
+            <div>
+              <span class="section-subtitle">Our Vision & Mission</span>
+              <h2 class="section-title">Bridging Theory & Professional Excellence</h2>
+              <p>InsideFactz Training Institute represents a standard in high-end technical training. While universities focus on abstract formulas, and standard courses rely on copy-paste code snippets, we deliver true masterclass training.</p>
+              
+              <div class="about-bullets">
+                <div class="about-bullet">
+                  <div class="about-bullet-icon">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="about-bullet-title">Rigorous Practice Method</h4>
+                    <p class="about-bullet-desc">Every line of code is written line-by-line, explaining underlying mathematics and architectural design patterns.</p>
+                  </div>
+                </div>
+
+                <div class="about-bullet">
+                  <div class="about-bullet-icon">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="about-bullet-title">Production Readiness Focus</h4>
+                    <p class="about-bullet-desc">We teach learners how to deploy models, serialize pipelines with pickle, query SQL endpoints, and structure modular files.</p>
+                  </div>
+                </div>
+
+                <div class="about-bullet">
+                  <div class="about-bullet-icon">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="about-bullet-title">Advanced Generative AI Roadmap</h4>
+                    <p class="about-bullet-desc">Gain skills in the Generative AI revolution, integrating LLMs, Pinecone Vector DBs, and prompt template structures.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="about-badge-card">
+                <span class="badge-seal">🎖️</span>
+                <h3 class="badge-card-title">InsideFactz Certified Academy</h3>
+                <p style="margin-bottom: 2rem;">Accredited program recognized across tech teams, engineered to match developer hiring profiles in leading technology sectors.</p>
+                <a href="#tracks" class="btn btn-secondary nav-link" style="width: 100%;">Explore Curriculum</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INVESTMENT CALL TO ACTION -->
+        <div class="section-container">
+          <div class="investment-cta-card">
+            <div class="investment-cta-grid">
+              <div class="investment-text">
+                <h2>Secure Your Program Spot</h2>
+                <p>Invest in an all-inclusive training structure. No surprise add-on fees, no subscription traps. Acquire lifetime engineering value, source code, projects database, and direct mentorship channel access.</p>
+                <div class="investment-guarantees">
+                  <div class="investment-guarantee-item">
+                    <span class="investment-guarantee-dot">✦</span> Interactive Coding Labs
+                  </div>
+                  <div class="investment-guarantee-item">
+                    <span class="investment-guarantee-dot">✦</span> Lifetime Portfolio Assets
+                  </div>
+                  <div class="investment-guarantee-item">
+                    <span class="investment-guarantee-dot">✦</span> Mentor Guidance Channels
+                  </div>
+                </div>
+              </div>
+
+              <div class="investment-price-card">
+                <span class="price-label">Program Details</span>
+                <div class="price-value" style="font-size: 2.2rem; margin-bottom: 0.8rem;">Flexible Fee</div>
+                <span class="price-meta">Installment & Scholarship Options Available</span>
+                <button class="btn btn-primary price-cta-btn" onclick="window.location.hash='#fees'">View Fee Portal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ========================================================
+           2. CURRICULUM / LEARNING TRACKS VIEW
+           ======================================================== -->
+      <section id="tracks" class="view-section">
+        <div class="section-container">
+          <span class="section-subtitle">Academic Curriculums</span>
+          <h2 class="section-title">The Four Pillars of InsideFactz Training</h2>
+          <p style="max-width: 650px; margin-bottom: 2rem;">Our learning progression leads you sequentially from analytical math spreadsheets to developing custom artificial intelligence agents.</p>
+          
+          <div class="tracks-grid">
+            
+            <!-- TRACK 1: EXCEL FOUNDATIONS -->
+            <div class="track-card track-1">
+              <div class="track-accent-bar"></div>
+              <div class="track-header">
+                <span class="track-tag">Track 1</span>
+                <h3 class="track-title">MS Excel Foundations</h3>
+                <p class="track-desc">Master spreadsheets for business reporting, mathematical operations, and interactive charting dashboard building.</p>
+              </div>
+              <div class="track-body">
+                <div>
+                  <h4 class="track-bullet-title">Syllabus Highlights</h4>
+                  <ul class="track-features">
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> Spreadsheet mastery and cell referencing</li>
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> Advanced formulas (VLOOKUP, SUMIFS, INDEX)</li>
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> Pivot Tables, KPI Cards, and Dynamic Slicers</li>
+                  </ul>
+                </div>
+                <div class="track-footer">
+                  <span class="track-duration">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Weeks 1 - 3
+                  </span>
+                  <button class="track-arrow-btn" onclick="selectTrackFilter('excel')">
+                    Explore Track &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- TRACK 2: PYTHON & DATA SCIENCE -->
+            <div class="track-card track-2">
+              <div class="track-accent-bar"></div>
+              <div class="track-header">
+                <span class="track-tag">Track 2</span>
+                <h3 class="track-title">Python & Data Science</h3>
+                <p class="track-desc">Move beyond spreadsheets. Write code, clean datasets, manage relational databases with SQL, and run models.</p>
+              </div>
+              <div class="track-body">
+                <div>
+                  <h4 class="track-bullet-title">Syllabus Highlights</h4>
+                  <ul class="track-features">
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> Core Python programming (Loops, OOP, Lambda)</li>
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> Pandas & NumPy data wrangling pipelines</li>
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> SQL database modeling & Seaborn visual analytics</li>
+                  </ul>
+                </div>
+                <div class="track-footer">
+                  <span class="track-duration">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Weeks 4 - 8
+                  </span>
+                  <button class="track-arrow-btn" onclick="selectTrackFilter('python')">
+                    Explore Track &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- TRACK 3: MACHINE LEARNING -->
+            <div class="track-card track-3">
+              <div class="track-accent-bar"></div>
+              <div class="track-header">
+                <span class="track-tag">Track 3</span>
+                <h3 class="track-title">Machine Learning</h3>
+                <p class="track-desc">Learn predictive model building, classical machine learning algorithms, text mining, and deep learning basics.</p>
+              </div>
+              <div class="track-body">
+                <div>
+                  <h4 class="track-bullet-title">Syllabus Highlights</h4>
+                  <ul class="track-features">
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> Supervised algorithms (XGBoost, Decision Trees)</li>
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> Unsupervised clustering & Text NLP mining</li>
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> Deep Learning Neural Networks & TensorFlow models</li>
+                  </ul>
+                </div>
+                <div class="track-footer">
+                  <span class="track-duration">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Weeks 9 - 13
+                  </span>
+                  <button class="track-arrow-btn" onclick="selectTrackFilter('ml')">
+                    Explore Track &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- TRACK 4: GENERATIVE AI -->
+            <div class="track-card track-4">
+              <div class="track-accent-bar"></div>
+              <div class="track-header">
+                <span class="track-tag">Track 4</span>
+                <h3 class="track-title">Generative AI</h3>
+                <p class="track-desc">Unlock advanced AI technologies. Build custom cognitive agents, vector databases, and RAG pipelines.</p>
+              </div>
+              <div class="track-body">
+                <div>
+                  <h4 class="track-bullet-title">Syllabus Highlights</h4>
+                  <ul class="track-features">
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> Prompt Engineering & LLM APIs (GPT, Claude)</li>
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> Retrieval Augmented Generation (RAG) endpoints</li>
+                    <li class="track-feature-item"><span class="track-feature-dot"></span> LangChain orchestration and Vector DB integrations</li>
+                  </ul>
+                </div>
+                <div class="track-footer">
+                  <span class="track-duration">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Weeks 14 - 16
+                  </span>
+                  <button class="track-arrow-btn" onclick="selectTrackFilter('genai')">
+                    Explore Track &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================
+           3. INTERACTIVE "DEEP DIVE" CURRICULUM EXPLORER VIEW
+           ======================================================== -->
+      <section id="explorer" class="view-section">
+        <div class="section-container">
+          <span class="section-subtitle">Syllabus Deep-Dive</span>
+          <h2 class="section-title">Interactive Module Explorer</h2>
+          <p style="max-width: 600px; margin-bottom: 3rem;">Search across topics or select specific learning tracks to filter our 12 comprehensive academic modules.</p>
+          
+          <!-- Control Bar -->
+          <div class="explorer-control-bar">
+            <!-- Search bar -->
+            <div class="search-box-container">
+              <input type="text" id="module-search" class="search-box" placeholder="Search topics (e.g. Pandas, RAG, SQL, XGBoost)...">
+              <svg class="search-icon-svg" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+            </div>
+
+            <!-- Track filter pills -->
+            <div class="filter-pills-container">
+              <button class="filter-pill active" data-filter="all">All Modules</button>
+              <button class="filter-pill" data-filter="excel">Excel Foundations</button>
+              <button class="filter-pill" data-filter="python">Python & DS</button>
+              <button class="filter-pill" data-filter="ml">Machine Learning</button>
+              <button class="filter-pill" data-filter="genai">Generative AI</button>
+            </div>
+          </div>
+
+          <!-- Accordion List Shell -->
+          <div class="modules-accordion-container" id="modules-accordion">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================
+           4. CAREER OUTCOMES & PORTFOLIO VIEW
+           ======================================================== -->
+      <section id="outcomes" class="view-section">
+        <div class="section-container">
+          <span class="section-subtitle">Professional Growth</span>
+          <h2 class="section-title">Career Outcomes & Learner Portfolios</h2>
+          <p style="max-width: 650px; margin-bottom: 2rem;">Our training focuses on building practical capabilities, preparing you with skills and models valued by hiring managers.</p>
+          
+          <div class="outcomes-grid">
+            
+            <!-- PILLAR 1 -->
+            <div class="outcome-card">
+              <div class="outcome-icon-container">📊</div>
+              <h3>Data Analysis Skills</h3>
+              <p>Acquire advanced capabilities in cleaning noisy datasets, handling missing values, structural merging, and performing aggregations on records.</p>
+              <div class="outcome-tools-container">
+                <span class="outcome-tools-title">Primary Tooling</span>
+                <div class="outcome-tools-tags">
+                  <span class="outcome-tool-mini-pill">MS Excel</span>
+                  <span class="outcome-tool-mini-pill">Pandas</span>
+                  <span class="outcome-tool-mini-pill">NumPy</span>
+                  <span class="outcome-tool-mini-pill">SQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PILLAR 2 -->
+            <div class="outcome-card">
+              <div class="outcome-icon-container">🤖</div>
+              <h3>ML Model Building</h3>
+              <p>Train and tune robust ML classification, regression, and clustering algorithms, understanding math structures and train-test evaluation splits.</p>
+              <div class="outcome-tools-container">
+                <span class="outcome-tools-title">Primary Tooling</span>
+                <div class="outcome-tools-tags">
+                  <span class="outcome-tool-mini-pill">Scikit-Learn</span>
+                  <span class="outcome-tool-mini-pill">XGBoost</span>
+                  <span class="outcome-tool-mini-pill">TensorFlow</span>
+                  <span class="outcome-tool-mini-pill">Keras</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PILLAR 3 -->
+            <div class="outcome-card">
+              <div class="outcome-icon-container">🧠</div>
+              <h3>GenAI Proficiency</h3>
+              <p>Integrate cutting-edge large language models, structured prompt patterns, tokenizers, vector databases, and full orchestrator models.</p>
+              <div class="outcome-tools-container">
+                <span class="outcome-tools-title">Primary Tooling</span>
+                <div class="outcome-tools-tags">
+                  <span class="outcome-tool-mini-pill">OpenAI API</span>
+                  <span class="outcome-tool-mini-pill">LangChain</span>
+                  <span class="outcome-tool-mini-pill">ChromaDB</span>
+                  <span class="outcome-tool-mini-pill">Claude</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PILLAR 4 -->
+            <div class="outcome-card">
+              <div class="outcome-icon-container">🚀</div>
+              <h3>Production Deployment</h3>
+              <p>Understand standard workflows for exporting model states, using pickle serialization, structuring Flask/FastAPI backend files, and API endpoints.</p>
+              <div class="outcome-tools-container">
+                <span class="outcome-tools-title">Primary Tooling</span>
+                <div class="outcome-tools-tags">
+                  <span class="outcome-tool-mini-pill">Pickle</span>
+                  <span class="outcome-tool-mini-pill">FastAPI</span>
+                  <span class="outcome-tool-mini-pill">API Testing</span>
+                  <span class="outcome-tool-mini-pill">JSON endpoints</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PILLAR 5 -->
+            <div class="outcome-card">
+              <div class="outcome-icon-container">📈</div>
+              <h3>Data Visualization</h3>
+              <p>Translate complex statistical findings into elegant visual dashboard screens, using advanced charting parameters and design rules.</p>
+              <div class="outcome-tools-container">
+                <span class="outcome-tools-title">Primary Tooling</span>
+                <div class="outcome-tools-tags">
+                  <span class="outcome-tool-mini-pill">Seaborn</span>
+                  <span class="outcome-tool-mini-pill">Matplotlib</span>
+                  <span class="outcome-tool-mini-pill">Excel Slicers</span>
+                  <span class="outcome-tool-mini-pill">Dashboards</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PILLAR 6 -->
+            <div class="outcome-card">
+              <div class="outcome-icon-container">📁</div>
+              <h3>Industry Portfolio</h3>
+              <p>Construct a clean capstone developer folder containing raw Python scripts, SQL tables, custom ML pipelines, and functional AI RAG chatbots.</p>
+              <div class="outcome-tools-container">
+                <span class="outcome-tools-title">Primary Tooling</span>
+                <div class="outcome-tools-tags">
+                  <span class="outcome-tool-mini-pill">GitHub Projects</span>
+                  <span class="outcome-tool-mini-pill">Python Scripts</span>
+                  <span class="outcome-tool-mini-pill">Notebooks</span>
+                  <span class="outcome-tool-mini-pill">RAG App</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================
+           5. FEE STRUCTURE / PRICING PORTAL VIEW
+           ======================================================== -->
+      <section id="fees" class="view-section">
+        <div class="section-container">
+          <span class="section-subtitle">Program Investment</span>
+          <h2 class="section-title">Transparent Fee Structure</h2>
+          <p style="max-width: 600px; margin-bottom: 3rem;">Select the training pathway that matches your professional objectives and experience requirements.</p>
+
+          <div class="pricing-grid">
+            
+            <!-- PLAN 1 -->
+            <div class="pricing-card">
+              <div class="price-card-header">
+                <h3 class="price-card-title">Standard Pathway</h3>
+                <p class="price-card-desc">Core training covering spreadsheets, Python basics, and visual analytics tools.</p>
+              </div>
+              <div class="price-card-value">Contact <span>/ admissions</span></div>
+              <ul class="price-card-features">
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> Track 1 & Track 2 Syllabus</li>
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> Hands-on Coding Labs</li>
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> Certificate of Completion</li>
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> Access to Student Forums</li>
+              </ul>
+              <button class="btn btn-secondary price-card-btn" onclick="openEnrollModal('excel')">Apply for Standard</button>
+            </div>
+
+            <!-- PLAN 2 -->
+            <div class="pricing-card recommended">
+              <div class="price-card-header">
+                <h3 class="price-card-title">Professional Developer</h3>
+                <p class="price-card-desc">Full 4-track stack including machine learning pipelines and custom generative AI models.</p>
+              </div>
+              <div class="price-card-value">Contact <span>/ admissions</span></div>
+              <ul class="price-card-features">
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> All 4 Learning Tracks</li>
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> 1-on-1 Portfolio Reviews</li>
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> Production Deployment Module</li>
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> Direct Placement Assistance</li>
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> Mock Coding Interviews</li>
+              </ul>
+              <button class="btn btn-primary price-card-btn" onclick="openEnrollModal('python')">Apply for Professional</button>
+            </div>
+
+            <!-- PLAN 3 -->
+            <div class="pricing-card">
+              <div class="price-card-header">
+                <h3 class="price-card-title">Executive Specialist</h3>
+                <p class="price-card-desc">Advanced enterprise AI specialization with tailored schedule coaching.</p>
+              </div>
+              <div class="price-card-value">Contact <span>/ admissions</span></div>
+              <ul class="price-card-features">
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> Enterprise AI Specialization</li>
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> Direct Executive Mentorship</li>
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> Flexible Program Schedule</li>
+                <li class="price-card-feature-item"><span class="price-card-feature-icon">✓</span> Capstone Project Sponsorship</li>
+              </ul>
+              <button class="btn btn-secondary price-card-btn" onclick="openEnrollModal('genai')">Apply for Executive</button>
+            </div>
+
+          </div>
+
+          <!-- Financing Panel -->
+          <div class="financing-panel">
+            <div class="financing-text">
+              <h3>Flexible Financing & Scholar Scholarships</h3>
+              <p>InsideFactz provides easy monthly EMIs and scholar scholarship opportunities based on coding test performances. Speak with an admissions coordinator to secure enrollment options.</p>
+            </div>
+            <button class="btn btn-primary" onclick="openEnrollModal()">Request Financing Details</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- REGISTRATION MODAL POPUP -->
+    <div id="enroll-modal" class="modal-overlay">
+      <div class="modal-container">
+        <button id="close-modal" class="modal-close-btn" aria-label="Close modal">&times;</button>
+        
+        <!-- Submission Form -->
+        <form id="enrollment-form">
+          <div class="modal-header">
+            <h2>Begin Your <span>Journey</span></h2>
+            <p>Enroll today in the InsideFactz program. Fill out your details below and a program mentor will reach out.</p>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Full Name</label>
+              <input type="text" id="form-name" class="form-input" required placeholder="e.g. Arjun Sharma">
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Email Address</label>
+              <input type="email" id="form-email" class="form-input" required placeholder="e.g. arjun@domain.com">
+            </div>
+
+            <div class="form-group">
+              <label for="form-phone" class="form-label">Phone Number</label>
+              <input type="tel" id="form-phone" class="form-input" required placeholder="e.g. +91 98765 43210">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-track" class="form-label">Target Track</label>
+                <select id="form-track" class="form-input" required>
+                  <option value="" disabled selected>Select Track</option>
+                  <option value="excel">Track 1: Excel Foundations</option>
+                  <option value="python">Track 2: Python & Data Science</option>
+                  <option value="ml">Track 3: Machine Learning</option>
+                  <option value="genai">Track 4: Generative AI</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="form-experience" class="form-label">Python Experience</label>
+                <select id="form-experience" class="form-input" required>
+                  <option value="" disabled selected>Select Level</option>
+                  <option value="beginner">None / Beginner</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced developer</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary modal-submit-btn">Submit Enrollment Request</button>
+          </div>
+        </form>
+
+        <!-- Success Screen -->
+        <div id="success-view" class="modal-success-container">
+          <div class="success-icon-badge">✓</div>
+          <h2 class="success-title">Almost Done!</h2>
+          <p class="success-desc" style="margin-bottom: 1.5rem;">To finalize your enrollment, please click below to send your details to <strong>insidefactz2017@gmail.com</strong>.</p>
+          
+          <div style="display: flex; flex-direction: column; gap: 0.8rem; width: 100%; max-width: 340px; margin-bottom: 2rem;">
+            <a id="success-gmail-btn" href="#" target="_blank" class="btn btn-primary" style="text-decoration: none;">Send via Gmail (Web)</a>
+            <a id="success-mailto-btn" href="#" class="btn btn-secondary" style="text-decoration: none;">Send via Mail (Outlook/Native)</a>
+          </div>
+          
+          <button class="btn btn-secondary" onclick="closeEnrollModal()" style="border: none; padding: 0.5rem 1rem; opacity: 0.8;">Return to Website</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="#home" class="logo">
+            InsideFactz <span>Academy</span>
+          </a>
+          <p>A premium tech education academy specializing in Python development, applied business analytics, classical machine learning models, and cutting-edge Generative AI applications.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Syllabus Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="#tracks" class="nav-link">Excel Spreadsheet Core</a></li>
+            <li><a href="#tracks" class="nav-link">Pandas Data Analysis</a></li>
+            <li><a href="#tracks" class="nav-link">Predictive ML Algorithms</a></li>
+            <li><a href="#tracks" class="nav-link">Generative AI LLM Agents</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Get In Touch</h3>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            Shanthi Complex, Opp. Pista House, A S Rao Nagar
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            insidefactz2017@gmail.com
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            +91 99128 41106
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            +91 91545 61885
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 InsideFactz Training Institute. All rights reserved.</p>
+        <p>Academy Program | Admissions Open (Est. 2017)</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
